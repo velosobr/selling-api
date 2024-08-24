@@ -1,22 +1,39 @@
 {
-  "name": "selling-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only --no-notify --ignore-watch node_modules src/server.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^22.5.0",
-    "ts-node-dev": "^2.0.0",
-    "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.5.4"
-  },
-  "dependencies": {
-    "yarn": "^1.22.22"
-  }
+    "name": "selling-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --no-notify --ignore-watch node_modules src/shared/http/server.ts",
+        "lint": "eslint .",
+        "lint-fix": "eslint . --fix"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@eslint/js": "^9.9.0",
+        "@types/cors": "^2.8.17",
+        "@types/express": "^4.17.21",
+        "@types/node": "^22.5.0",
+        "@typescript-eslint/eslint-plugin": "^8.2.0",
+        "@typescript-eslint/parser": "^8.2.0",
+        "eslint": "^9.9.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "globals": "^15.9.0",
+        "prettier": "^3.3.3",
+        "ts-node-dev": "^2.0.0",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.5.4",
+        "typescript-eslint": "^8.2.0"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "experss": "^0.0.1-security",
+        "express": "^4.19.2",
+        "express-async-errors": "^3.1.1",
+        "yarn": "^1.22.22"
+    }
 }
